@@ -45,7 +45,7 @@ const wordflick = () => {
                 offset--;
             }
         }
-        $(".word").text(part);
+        $(".typing").text(part);
     }, speed);
 };
 $(() => {

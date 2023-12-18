@@ -47,7 +47,7 @@ const wordflick = () => {
       }
     }
 
-    $(".word").text(part);
+    $(".typing").text(part);
   }, speed);
 };
 
