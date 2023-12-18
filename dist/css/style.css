@@ -104,4 +104,15 @@ body {
   animation: leftLoop 10s linear infinite;
 }
 
+.card {
+  box-sizing: border-box;
+  margin: 10px auto;
+  width: 220px;
+  height: 310px;
+  transition: all 0.2s;
+  background-color: rgb(103, 85, 85);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+}
+
 /*# sourceMappingURL=style.css.map */

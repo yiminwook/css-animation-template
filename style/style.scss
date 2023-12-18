@@ -57,3 +57,16 @@ body {
   -webkit-animation: leftLoop 10s linear infinite;
   animation: leftLoop 10s linear infinite;
 }
+
+.card {
+  box-sizing: border-box;
+  margin: 10px auto;
+  width: 220px;
+  height: 310px;
+  transition: all 0.2s;
+  // background-image: "";
+  // background-size: cover;
+  background-color: rgb(103, 85, 85);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+}
