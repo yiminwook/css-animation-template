@@ -9,8 +9,13 @@ body {
   box-sizing: border-box;
 }
 
-.container {
+.overflaw-hidden {
   overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0.1rem;
 }
 
 .height {
