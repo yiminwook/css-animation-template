@@ -20,7 +20,7 @@
 }
 
 /* for Firefox */
-@-moz-keyframes scrolling {
+@-moz-keyframes leftLoop {
   from {
     -moz-transform: translateX(100%);
   }
@@ -30,7 +30,7 @@
 }
 
 /* for Chrome */
-@-webkit-keyframes scrolling {
+@-webkit-keyframes leftLoop {
   from {
     -webkit-transform: translateX(100%);
   }
@@ -39,7 +39,7 @@
   }
 }
 
-@keyframes scrolling {
+@keyframes leftLoop {
   from {
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);

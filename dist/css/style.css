@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* The typing effect */
 @keyframes typing {
   from {
@@ -17,7 +18,7 @@
   }
 }
 /* for Firefox */
-@-moz-keyframes scrolling {
+@-moz-keyframes leftLoop {
   from {
     -moz-transform: translateX(100%);
   }
@@ -26,7 +27,7 @@
   }
 }
 /* for Chrome */
-@-webkit-keyframes scrolling {
+@-webkit-keyframes leftLoop {
   from {
     -webkit-transform: translateX(100%);
   }
@@ -34,7 +35,7 @@
     -webkit-transform: translateX(-100%);
   }
 }
-@keyframes scrolling {
+@keyframes leftLoop {
   from {
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
@@ -52,10 +53,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-sizing: border-box;
 }
 
 .container {
   overflow: hidden;
+}
+
+.height {
+  height: 3rem;
+}
+
+.relative {
+  position: relative;
 }
 
 .border {
@@ -73,6 +83,7 @@ body {
   white-space: nowrap; /* Keeps the content on a single line */
 }
 .typing::after {
+  /* text cursor */
   margin-left: 1rem;
   content: "";
   border-right: 0.25rem solid black; /* The typwriter cursor */
@@ -81,15 +92,16 @@ body {
 }
 
 .scroll-text {
+  display: inline-block; /* text width를 컨텐츠범위만큼 늘어나게 */
   font-size: 1.5rem;
   font-weight: 600;
   white-space: nowrap; /* Keeps the content on a single line */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -moz-animation: scrolling 15s linear infinite;
-  -webkit-animation: scrolling 15s linear infinite;
-  animation: scrolling 15s linear infinite;
+}
+
+.scroll-left {
+  -moz-animation: leftLoop 10s linear infinite;
+  -webkit-animation: leftLoop 10s linear infinite;
+  animation: leftLoop 10s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
