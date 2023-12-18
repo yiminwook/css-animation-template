@@ -1,0 +1,20 @@
+@import "keyframes";
+
+.typing {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  font: 700 normal 2.5em "tahoma";
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  white-space: nowrap; /* Keeps the content on a single line */
+
+  &::after {
+    //text cursor
+    margin-left: 1rem;
+    content: "";
+    border-right: 0.15em solid black; /* The typwriter cursor */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+}
