@@ -8,8 +8,6 @@
     "start": "next start",
     "build": "next build",
     "serve": "npx http-server out",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
